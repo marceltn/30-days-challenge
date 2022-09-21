@@ -1,0 +1,18 @@
+<h1>Show Info</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @info.name %>
+  </li>
+
+  <li>
+    <strong>Start date:</strong>
+    <%= @info.start_date %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.info_path(@conn, :edit, @info) %></span> |
+<span><%= link "Back", to: Routes.info_path(@conn, :index) %></span>
